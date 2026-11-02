@@ -1,0 +1,31 @@
+{
+  "simulator": "PyBullet",
+  "ros2": true,
+  "ros_distro": "humble",
+  "ros_node_names": [
+    "pybullet_simulator",
+    "ai_signal_recognizer",
+    "signal_controller"
+  ],
+  "image_messages_processed": 600,
+  "controller_messages_processed": 600,
+  "cmd_vel_received": 600,
+  "duration_seconds": 60,
+  "playback_speed": 1,
+  "arrived": true,
+  "events": [
+    {
+      "event": "arrived",
+      "t": 49.9
+    }
+  ],
+  "start_x": 2.132176398802359e-19,
+  "end_x": 4.008143790145689,
+  "python": "3.14.10",
+  "target_arrival_seconds": 50,
+  "commanded_speed_mps": 0.105,
+  "goal_x": 4.0,
+  "goal_position_error_m": 0.00814379014568889,
+  "red_interval_displacement_m": 0.000219745607830113,
+  "notes": "AI classifies camera RGB for red/green. Signal changes are scripted environment events. Goal arrival uses simulator x position as an odometry substitute, NOT visual goal recognition. White goal frame and GOAL overlay are display markers."
+}
